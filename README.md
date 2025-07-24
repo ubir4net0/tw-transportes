@@ -14,33 +14,40 @@ Trata-se de um sistema para gerenciamento e rastreamento de fretes, com recursos
 - Upload de arquivos  
 - API RESTful  
 - Banco de dados versionado com migrations e seeders  
-### Instalando o projeto
 
-#### Clonar o repositório
+## Instalando o projeto
 
+### Clonar o repositório
+
+```bash
 git clone https://github.com/ubir4net0/tw-transportes.git
+```
 
+### Instalar as dependências
 
-#### Instalar as depencências
-
+```bash
 composer install
-
+```
 
 Ou em ambiente de desenvolvimento:
 
+```bash
 composer update
+```
 
+### Criar arquivo de configurações de ambiente
 
-#### Criar arquivo de configurações de ambiente
+Copiar o arquivo de exemplo `.env.example` para `.env` na raiz do projeto e configurar os detalhes da aplicação e conexão com o banco de dados.
 
-Copiar o arquivo de exemplo .env.example para .env na raiz do projeto
-configurar os detalhes da aplicação e conexão com o banco de dados.
+### Criar a estrutura no banco de dados
 
-#### Criar a estrutura no banco de dados
-
+```bash
 php artisan migrate
+```
 
+### Iniciar o servidor de desenvolvimento
 
-#### Iniciar o servidor de desenvolvimento
-
+```bash
 php artisan serve
+```
+
